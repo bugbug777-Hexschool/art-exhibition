@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/bootstrap.css">
-    <link rel="stylesheet" href="./assets/style/all.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%- title %>
+  </title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/bootstrap.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
 
-  <body>
+<body>
+  <header>
+    <div class="container position-relative d-flex justify-content-end align-items-center header__heading">
+      <h1 class="position-absolute top-50 start-50 translate-middle fs-22 fs-md-4 text-primary">EXHIBINECTION</h1>
+      <div class="position-relative">
+        <button class="material-icons">
+          confirmation_number
+        </button>
+        <span class="position-absolute top-0 start-100 translate-middle badge bg-danger rounded-pill fs-12">3</span>
+      </div>
+    </div>
+  </header>
 
-    <%- contents %>
+  <%- contents %>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
-  </body>
+</body>
 
 </html>
